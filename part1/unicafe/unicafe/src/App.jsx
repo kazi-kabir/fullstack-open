@@ -6,10 +6,25 @@ const App = () => {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
+  const goodFeedback = () => {
+    setGood(good + 1);
+  }
+
+  const neutralFeedback = () => {
+    setNeutral(neutral + 1);
+  }
+
+
   return (
     <div>
-      code here
+      <h1>give feedback</h1>
+      <button onClick={goodFeedback}>good</button>
+
+      <div>{good}</div>
     </div>
+    
+    
+    
   )
 }
 
