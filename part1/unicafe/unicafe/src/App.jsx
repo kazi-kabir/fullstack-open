@@ -14,13 +14,19 @@ const App = () => {
     setNeutral(neutral + 1);
   }
 
-
+  const badFeedback = () => {
+    setBad(neutral + 1);
+  }
+  
   return (
     <div>
       <h1>give feedback</h1>
-      <button onClick={goodFeedback}>good</button>
-
+      <button onClick={goodFeedback}>good</button>  
+      <button onClick={neutralFeedback}>good</button>
+      <button onClick={badFeedback}>good</button>
       <div>{good}</div>
+      <div>{neutral}</div>
+      <div>{bad}</div>
     </div>
     
     
