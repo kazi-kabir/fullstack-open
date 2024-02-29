@@ -6,16 +6,22 @@ const App = () => {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
+  let total = 0;
+      
+  
   const goodFeedback = () => {
     setGood(good + 1);
+    total++;
   }
 
   const neutralFeedback = () => {
     setNeutral(neutral + 1);
+    total++;
   }
 
   const badFeedback = () => {
     setBad(neutral + 1);
+    total++;
   }
   
   return (
