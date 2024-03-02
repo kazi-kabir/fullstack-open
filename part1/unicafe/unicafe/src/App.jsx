@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+
 const App = () => {
   // save clicks of each button to its own state
   const [good, setGood] = useState(0)
@@ -7,8 +8,7 @@ const App = () => {
   const [bad, setBad] = useState(0)
 
   let total = 0;
-      
-  
+    
   const goodFeedback = () => {
     setGood(good + 1);
     total++;
@@ -24,6 +24,8 @@ const App = () => {
     total++;
   }
   
+  console.log(total);
+
   return (
     <div>
       <h1>give feedback</h1>
