@@ -32,9 +32,10 @@ const App = () => {
       <button onClick={goodFeedback}>good</button>  
       <button onClick={neutralFeedback}>good</button>
       <button onClick={badFeedback}>good</button>
-      <div>{good}</div>
-      <div>{neutral}</div>
-      <div>{bad}</div>
+      <div>good: {good}</div>
+      <div>neutral: {neutral}</div>
+      <div>bad: {bad}</div>
+      <div>total: {total}</div>
     </div>
     
     
