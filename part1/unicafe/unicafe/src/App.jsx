@@ -1,5 +1,10 @@
 import { useState } from 'react'
 
+// silly outlines 
+const Statistics = (props) => {
+  
+}
+
 
 const App = () => {
   // save clicks of each button to its own state
