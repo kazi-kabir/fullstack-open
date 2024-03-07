@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 // silly outlines 
 const Statistics = (props) => {
-  
+    <div>{props.total}</div>
 }
 
 
